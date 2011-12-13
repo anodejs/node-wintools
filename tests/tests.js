@@ -2,10 +2,9 @@ var wintools = require('../main');
 
 exports.ps = function(test) {
     wintools.ps(function(err, ps) {
-        console.log(ps);
-        test.ok(!err, err.msg);
+        test.ok(!err, err);
         test.ok(ps);
-        test.ok(ps && ps.length > 0);
+        test.ok(ps && Object.keys(ps).length > 0);
         test.done();
     });
 };
@@ -23,3 +22,9 @@ exports.killByImage = function(test) {
         test.done();
     });
 };
+
+exports.iis = function(test) {
+    test.ok(wintools.iis);
+    //TODO: write tests
+    test.done();
+}
