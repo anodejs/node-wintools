@@ -1,0 +1,20 @@
+{
+    "name": "wintools",
+    "description": "Some Windows tools for node.js",
+    "main": "./main",
+    "author": "Elad Ben-Israel",
+    "version": "0.0.1",
+    "dependencies": {
+        "async": ">=0.1.15"
+    },
+    "devDependencies": {
+        "nodeunit": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anodejs/node-wintools"
+    },
+    "scripts": {
+        "test": "node_modules/nodeunit/bin/nodeunit tests/"
+    }
+}
