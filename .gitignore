@@ -1,9 +1,2 @@
-*.user
-bin/*
-obj/*
-.DS_Store
-apps.json
-env.json
 npm-debug.log
-.shimmed.*
-0.txt
+node_modules

@@ -9,7 +9,7 @@ exports.ps = function(test) {
     });
 };
 
-exports.kill = function(test) {
+exports.killByPID = function(test) {
     wintools.kill.pid(77777, function(err) {
         test.ok(err);
         test.done();
@@ -23,8 +23,9 @@ exports.killByImage = function(test) {
     });
 };
 
-exports.iis = function(test) {
-    test.ok(wintools.iis);
-    //TODO: write tests
+exports.shutdown = function(test) {
+    // only check that api exists
+    test.ok(wintools.shutdown.poweroff);
+    test.ok(wintools.shutdown.restart);
     test.done();
-}
+};

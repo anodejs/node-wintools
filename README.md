@@ -1,36 +1,23 @@
 # wintools - Some windows tools for node.js
 
-Only runs on Windows
-
- * wintools.ps - process info
- * wintools.iis - control iis (through appcfg)
-
 ## Installation
 
 ```bash
 npm install wintools
 ```
 
-## Usage
-
 ```javascript
 var wintools = require('wintools');
 ```
 
-### wintools.ps(callback)
+## API
 
-```javascript
-wintools.ps(function(err, list)) {
-    console.log('processes:', list);
-});
-```
+ * `wintools.ps(callback)` where callback is `function(err, list)` returns a list of running processes.
+ * `wintools.kill.pid(pid, callback)` kills a process by PID.
+ * `wintools.kill.image(imageName, callback)` kills a process by image name (e.g. `node.exe`).
+ * `wintools.shutdown.poweroff([callback])` turns of off the machine immediately.
+ * `wintools.shutdown.restart([callback])` rstarts the machine immediately.
 
-### wintools.iis
-
- * wintools.iis.vdirs
- * ...
-
-```
 ## License
 
 MIT

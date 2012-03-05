@@ -3,7 +3,7 @@
     "description": "Some Windows tools for node.js",
     "main": "./main",
     "author": "Elad Ben-Israel",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "dependencies": {
         "async": ">=0.1.15"
     },
