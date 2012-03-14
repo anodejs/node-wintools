@@ -1,20 +1,35 @@
 {
-    "name": "wintools",
-    "description": "Some Windows tools for node.js",
-    "main": "./main",
-    "author": "Elad Ben-Israel",
-    "version": "0.1.0",
-    "dependencies": {
-        "async": ">=0.1.15"
-    },
-    "devDependencies": {
-        "nodeunit": "*"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/anodejs/node-wintools"
-    },
-    "scripts": {
-        "test": "node_modules/nodeunit/bin/nodeunit tests/"
-    }
+  "name": "wintools",
+  "description": "Some Windows tools for node.js",
+  "main": "./main",
+  "bin": {},
+  "author": "anode <anode@microsoft.com>",
+  "version": "0.2.0",
+  "license": "MIT",
+  "contributors": [
+    "Elad Ben-Israel <eladb@microsoft.com>",
+    "Yosef Dinerstein <yosefd@microsoft.com>"
+  ],
+  "keywords": [
+    "nodejs",
+    "windows"
+  ],
+  "engines": {
+    "node": "~0.6.x"
+  },
+  "dependencies": {
+    "async": "0.1.x",
+    "xml2js": "0.1.x"
+  },
+  "devDependencies": {
+    "nodeunit": "0.6.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anodejs/node-wintools.git"
+  },
+  "scripts": {
+    "test": "nodeunit test/*.js"
+  }
 }
+
