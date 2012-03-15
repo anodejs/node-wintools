@@ -1,7 +1,7 @@
 var wintools = require('../main');
 
 exports.ps = function (test) {
-  wintools.ps(null, function (err, ps) {
+  wintools.ps(function (err, ps) {
     test.ok(!err, err);
     test.ok(ps);
     test.ok(ps && Object.keys(ps).length > 0);
