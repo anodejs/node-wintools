@@ -4,7 +4,7 @@
   "main": "./main",
   "bin": {},
   "author": "anode <anode@microsoft.com>",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "contributors": [
     "Elad Ben-Israel <eladb@microsoft.com>",
